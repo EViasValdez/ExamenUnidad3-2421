@@ -1,5 +1,4 @@
 <?php
-
 include("../model/conexion2.php");
 $con=conectar();
 
