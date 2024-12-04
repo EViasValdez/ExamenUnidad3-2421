@@ -10,12 +10,12 @@
 
 <?php
 include("../model/conexion2.php");
-$con=conectar();
+$con = conectar();
 
-$id=$_POST['id'];
-$nombre=$_POST['nombre'];
-$tipo=$_POST['tipo'];
-$cantidad=$_POST['cantidad'];
+$id = $_POST['id'];
+$nombre = $_POST['nombre'];
+$tipo = $_POST['tipo'];
+$cantidad = $_POST['cantidad'];
 
 $sql="INSERT INTO `almacen`(`id`, `nombre`, `tipo`, `cantidad`) VALUES('$id','$nombre','$tipo','$cantidad')";
 $query= mysqli_query($con,$sql);
