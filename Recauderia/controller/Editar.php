@@ -2,9 +2,9 @@
     include("../model/conexion2.php");
     $con = conectar();
 
-$id=$_GET['id'];
-$sql="SELECT * FROM almacen WHERE id='$id'";
-$query=mysqli_query($con,$sql);
+$id = $_GET['id'];
+$sql = "SELECT * FROM almacen WHERE id='$id'";
+$query = mysqli_query($con,$sql);
 
 $row=mysqli_fetch_array($query);
 ?>
@@ -24,11 +24,9 @@ $row=mysqli_fetch_array($query);
                     <form action="update.php" method="POST">
                     
                                 <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
-                                
                                 <input type="text" class="form-control mb-3" name="nombre" placeholder="Dni" value="<?php echo $row['nombre']  ?>">
                                 <input type="text" class="form-control mb-3" name="tipo" placeholder="Nombres" value="<?php echo $row['tipo']  ?>">
                                 <input type="text" class="form-control mb-3" name="cantidad" placeholder="Apellidos" value="<?php echo $row['cantidad']  ?>">
-                                
                             <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
                     </form>
                     
