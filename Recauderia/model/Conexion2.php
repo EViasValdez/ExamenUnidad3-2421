@@ -4,7 +4,7 @@ function conectar () {
     $user = "yourlach_root";
     $pass = "h-bG(jU{}AA,";
 
-    $bd="yourlach_recauderia2";
+    $bd = "yourlach_recauderia2";
 
     $con = mysqli_connect($host,$user,$pass);
 
