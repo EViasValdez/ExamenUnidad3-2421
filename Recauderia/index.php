@@ -28,9 +28,7 @@
         <div class="text-end">
         
         </div>
-
         <h2>¡Hola, Bienvenido!  </h2>
-
         <h3>Inicia sesión </h3>
                             
         <form action="index.php" method="post" >
@@ -45,8 +43,6 @@
             <input type="text" class="form-control gs" name="password"  placeholder="Contraseña" >
           </div>
 
-          
-
           <div class="d-grid">
             <button type="submit" class="btn btn-primary gs" >Iniciar Sesion</button>
           </div>
@@ -56,11 +52,8 @@
           </div>
 
         </form>
-        
-        
       </div>
     </div>
-
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -76,8 +69,7 @@
       include("model/conexion.php");
       $sql = "SELECT * FROM admins WHERE usuario = '$mail' AND contraseña = '$pass'";
       
-      if(!$consulta = $conectar->query($sql)){
-
+      if (!$consulta = $conectar->query($sql)) {
           echo "<script> alert('erro consulta');</script>";
       } else {
           // 6. Cuento registros obtenidos del select. 
