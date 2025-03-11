@@ -62,20 +62,14 @@
     </div>
 
   </div>
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <?php
     
-    if(isset($_POST["mail"]) && isset($_POST["password"])){
-
+    if (isset($_POST["mail"]) && isset($_POST["password"])) {
       $mail=$_POST["mail"];
       $pass=$_POST["password"];
       comprobar($mail,$pass);
-      
   }
   
   function comprobar($mail,$pass){
@@ -85,30 +79,25 @@
       if(!$consulta = $conectar->query($sql)){
 
           echo "<script> alert('erro consulta');</script>";
-      }else{
-  
+      } else {
           // 6. Cuento registros obtenidos del select. 
           // Como el nombre de usuario en la clave primaria no debería de haber mas de un registro con el mismo nombre.
           $filas = mysqli_num_rows($consulta);
           echo "<script> alert('consulta');</script>";
           // 7. Comparo cantidad de registros encontrados
   
-          if($filas){
-              
+          if ($filas) {
               echo "<script> alert('entro');</script>";
               echo"<script>location.href ='view/home.php';</script>";
                // Si está todo correcto redirigimos a otra página
-          }if($filas==0){
+          }
+          if ($filas==0) {
               echo "<script>alert('Error: usuario y/o clave incorrectos!!');</script>";
-  
-            
-  
           }
       }
   }
   
   ?>
     ?>
-
 </body>
 </html>
