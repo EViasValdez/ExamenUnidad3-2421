@@ -19,8 +19,7 @@
     </head>
     <body>
             <div class="container mt-5">
-                    <div class="row"> 
-                        
+                    <div class="row">
                         <div class="col-md-3">
                             <h1>Registrar</h1>
                                 <form action="../controller/controlador.php" method="POST">
@@ -33,7 +32,6 @@
                                     <input type="submit" class="btn btn-primary">
                                 </form>
                         </div>
-
                         <div class="col-md-8">
                             <table class="table" >
                                 <thead class="table-success table-striped" >
