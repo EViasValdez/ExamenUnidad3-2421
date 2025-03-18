@@ -28,11 +28,10 @@
         <div class="text-end">
         
         </div>
-        <h2>¡Hola, Bienvenido!  </h2>
+        <h2>¡Hola, Bienvenido! </h2>
         <h3>Inicia sesión </h3>
                             
         <form action="index.php" method="post" >
-
           <div class="mb-4">
             <label for="email">Ingresa tu correo</label>
             <input type="text" class="form-control gs" name="mail"  placeholder="Correo Electronico" >
@@ -59,11 +58,12 @@
 
     <?php
     
-    if (isset($_POST["mail"]) && isset($_POST["password"])) {
+    if (isset($_POST["mail"]) && isset($_POST["password"]))
+    {
       $mail=$_POST["mail"];
       $pass=$_POST["password"];
       comprobar($mail,$pass);
-  }
+    }
   
   function comprobar($mail,$pass){
       include("model/conexion.php");
@@ -83,7 +83,7 @@
               echo"<script>location.href ='view/home.php';</script>";
                // Si está todo correcto redirigimos a otra página
           }
-          if ($filas==0) {
+          if ($filas == 0) {
               echo "<script>alert('Error: usuario y/o clave incorrectos!!');</script>";
           }
       }
