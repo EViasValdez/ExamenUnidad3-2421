@@ -5,7 +5,8 @@
     $database = "yourlach_recauderia2";
     $conectar = mysqli_connect($server, $usuario, $password, $database);
         
-    if (!$conectar) {
+    if (!$conectar)
+    {
         die("Error de coneccion: ".mysqli_connect_error());
     }
 ?>
