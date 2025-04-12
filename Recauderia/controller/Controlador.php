@@ -7,7 +7,6 @@
     <title>Cargando...</title>
 </head>
 <body>
-
 <?php
 include("../model/conexion2.php");
 $con = conectar();
@@ -26,6 +25,5 @@ if ($query){
 } else {
 }
 ?>
-
 </body>
 </html>
