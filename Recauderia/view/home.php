@@ -1,10 +1,10 @@
 <?php 
     include("../model/conexion2.php");
     
-    $con=conectar();
-    $sql="SELECT *  FROM almacen";
-    $query=mysqli_query($con,$sql);
-    $row=mysqli_fetch_array($query);
+    $con = conectar();
+    $sql ="SELECT * FROM almacen";
+    $query = mysqli_query($con,$sql);
+    $row = mysqli_fetch_array($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
