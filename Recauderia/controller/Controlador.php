@@ -19,7 +19,7 @@ $cantidad = $_POST['cantidad'];
 $sql="INSERT INTO `almacen`(`id`, `nombre`, `tipo`, `cantidad`) VALUES('$id','$nombre','$tipo','$cantidad')";
 $query= mysqli_query($con,$sql);
 
-if ($query){
+if ($query) {
     Header("Location:../view/home.php");
 
 } else {
