@@ -17,14 +17,11 @@
   <link rel="stylesheet" href="view/style/Estilos.css">
 </head>
 <body>
-  
   <div class="container">
     <div class="row">
       <div class="col imagen d-none d-lg-block col-md-5 col-lg-5 col-xl-6 ">
       </div>
-
       <div class="col p-5-star-end ">
-
         <div class="text-end">
         
         </div>
