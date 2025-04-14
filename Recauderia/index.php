@@ -66,7 +66,8 @@
       include("model/conexion.php");
       $sql = "SELECT * FROM admins WHERE usuario = '$mail' AND contraseña = '$pass'";
       
-      if (!$consulta = $conectar->query($sql)) {
+      if (!$consulta = $conectar->query($sql))
+{
           echo "<script> alert('erro consulta');</script>";
       } else {
           // 6. Cuento registros obtenidos del select. 
@@ -75,12 +76,14 @@
           echo "<script> alert('consulta');</script>";
           // 7. Comparo cantidad de registros encontrados
   
-          if ($filas) {
+          if ($filas)
+{
               echo "<script> alert('entro');</script>";
               echo"<script>location.href ='view/home.php';</script>";
                // Si está todo correcto redirigimos a otra página
           }
-          if ($filas == 0) {
+          if ($filas == 0)
+{
               echo "<script>alert('Error: usuario y/o clave incorrectos!!');</script>";
           }
       }
