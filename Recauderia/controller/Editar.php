@@ -3,10 +3,10 @@
     $con = conectar();
 
 $id = $_GET['id'];
-$sql = "SELECT * FROM almacen WHERE id='$id'";
-$query = mysqli_query($con,$sql);
+$sql = "SELECT * FROM almacen WHERE id = '$id'";
+$query = mysqli_query($con, $sql);
 
-$row=mysqli_fetch_array($query);
+$row = mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE html>
