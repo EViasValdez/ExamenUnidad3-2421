@@ -10,7 +10,6 @@
 <?php
 include("../model/conexion2.php");
 $con = conectar();
-
 $id = $_POST['id'];
 $nombre = $_POST['nombre'];
 $tipo = $_POST['tipo'];
