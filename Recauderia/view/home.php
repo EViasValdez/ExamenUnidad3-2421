@@ -1,4 +1,4 @@
-<?php 
+<?php
     include("../model/conexion2.php");
     
     $con = conectar();
@@ -39,8 +39,6 @@
                                         <th>Nombre</th>
                                         <th>Tipo</th>
                                         <th>kilos</th>
-                                        <th></th>
-                                        <th></th>
                                     </tr>
                                 </thead>
 
